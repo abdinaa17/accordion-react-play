@@ -13,16 +13,16 @@ const Accordion = () => {
   };
 
   return (
-    <section>
-      <h1>Jokes</h1>
+    <section className="accordion">
       <div>
+        <h1>Jokes</h1>
         <h4 className="joke__qtn">
           {joke.Question}
           <span className="toggle" onClick={handleClick}>
             {show ? "-" : "+"}
           </span>
         </h4>
-        <p className={show ? "joke__ans show" : "joke__ans"}>{joke.Answer}</p>
+        <h3 className={show ? "joke__ans show" : "joke__ans"}>{joke.Answer}</h3>
       </div>
     </section>
   );
